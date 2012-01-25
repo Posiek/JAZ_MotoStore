@@ -12,12 +12,23 @@
 		  </h:commandLink>
 		</li>
 		<li>
-		  <h:commandLink action="add?faces-redirect=true">
-			<h:outputText value="#{msg.personAddLabel}" />
-		  </h:commandLink></li>
+		  <h:commandLink action="addClient?faces-redirect=true">
+			<h:outputText value="#{msg.clientAddLabel}" />
+		  </h:commandLink>
+		</li>
 		<li>
-		  <h:commandLink action="showPersons?faces-redirect=true">
-			 <h:outputText value="#{msg.personAllLabel}" />
+		  <h:commandLink action="addMotorcycle?faces-redirect=true">
+			<h:outputText value="#{msg.motorcycleAddLabel}" />
+		  </h:commandLink>
+		</li>
+		<li>
+		  <h:commandLink action="showClients?faces-redirect=true">
+			 <h:outputText value="#{msg.clientAllLabel}" />
+		  </h:commandLink>
+		</li>
+		<li>
+		  <h:commandLink action="showMotorcycles?faces-redirect=true">
+			 <h:outputText value="#{msg.motorcycleAllLabel}" />
 		  </h:commandLink>
 		</li>
 	</ul>

@@ -9,23 +9,23 @@
 	
     <h:form>
     
-     <h:dataTable value="#{personBean.allPersons}" var="item">
-      <f:facet name="header">#{msg.personAllLabel}</f:facet>
+     <h:dataTable value="#{clientBean.allClients}" var="item">
       
       <h:column>
-        <f:facet name="header">#{msg.personFirstNameLabel}</f:facet>
+        <f:facet name="header">#{msg.clientFirstNameLabel}</f:facet>
         #{item.firstName}
       </h:column>
       
       <h:column>
-        <f:facet name="header">#{msg.personPinLabel}</f:facet>
-        #{item.pin}
+        <f:facet name="header">#{msg.clientSurnameLabel}</f:facet>
+        #{item.surname}
       </h:column>
-      
+
       <h:column>
         <f:facet name="header">#{msg.action}</f:facet>
-        <h:commandLink value="#{msg.actionDelete}" action="#{personBean.deletePerson}"/>
+        <h:commandLink value="#{msg.actionDelete}" action="#{clientBean.deleteClient}"/>
       </h:column>
+
       
      </h:dataTable>
     </h:form>
